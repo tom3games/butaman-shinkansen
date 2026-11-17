@@ -1,0 +1,15 @@
+- snd/depart.mp3: File:London Underground 1996 Stock train departing a station.ogg / Philt3r / CC BY 4.0
+- snd/chime.mp3: File:Taiwan Railway Station Arrival Sound 20221115 180616.wav / Lexcie / CC0
+- snd/grunt1.mp3: Little Grunts / crueltyinc / CC0
+- snd/grunt2.mp3: Little Grunts / crueltyinc / CC0
+- snd/paper1.mp3: 100 CC0 SFX / rubberduck / CC0
+- snd/paper2.mp3: 100 CC0 SFX / rubberduck / CC0
+- snd/bite1.mp3: 40 CC0 water / splash / slime SFX / rubberduck / CC0
+- snd/bite2.mp3: 40 CC0 water / splash / slime SFX / rubberduck / CC0
+- snd/bite3.mp3: 40 CC0 water / splash / slime SFX / rubberduck / CC0
+- snd/rumble.mp3: 100 CC0 SFX #2 / rubberduck / CC0
+- snd/crowd.mp3: Crowd Shouting/Speaking Ambience / StarNinjas / CC0
+- snd/fail.mp3: 85 Short music jingles / Kenney / CC0
+- snd/win.mp3: 85 Short music jingles / Kenney / CC0
+- snd/squeak.mp3: Squeak toy sounds / bart / CC0
+- snd/bgm.mp3: Comedy Funny Background Song / Almitory / CC-BY 3.0,CC-BY 4.0,CC-BY-SA 3.0,CC-BY-SA 4.0,CC0,GPL 2.0,GPL 3.0,OGA-BY 3.0
