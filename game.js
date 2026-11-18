@@ -197,7 +197,7 @@
     $('rNum').textContent = `${t.bunsOf(e.buns, D.buns)}　${t.close2(e.close)}`
     $('rRank').textContent = rankOf(e.buns)
     $('rWhere').textContent = e.kind === 'caught' ? `${t.where(e.where)} ${e.by === 'kid' ? t.kidCaught : t.caught}` : ''
-    $('rFace').src = `art/me-${e.kind === 'win' ? 'safe' : e.kind === 'caught' ? 'caught' : 'normal'}.webp`
+    $('rFace').src = `img/me-${e.kind === 'win' ? 'safe' : e.kind === 'caught' ? 'caught' : 'normal'}.webp`
     const st = $('stamp'); st.textContent = e.kind === 'win' ? t.resWin : e.kind === 'caught' ? t.resCaught : t.resLate
     st.classList.remove('on'); setTimeout(() => st.classList.add('on'), 250)
   }
@@ -312,8 +312,8 @@
   function spr(id, name) {
     if (lastSpr[id] === name) return; lastSpr[id] = name; const el = $(id)
     const apply = () => { const h = sizeOf[name]; if (h) el.style.height = (h * SPR_K * (SCL[id] || 1)) + '%'; el.style.setProperty('--ax', (AX[name] || 50) + '%'); placeLabels() }
-    if (!sizeOf[name]) { const im = new Image(); im.onload = () => { sizeOf[name] = im.naturalHeight; if (lastSpr[id] === name) apply() }; im.src = `art/${name}.webp` }
-    el.src = `art/${name}.webp`; apply(); el.classList.remove('pop'); void el.offsetWidth; el.classList.add('pop')
+    if (!sizeOf[name]) { const im = new Image(); im.onload = () => { sizeOf[name] = im.naturalHeight; if (lastSpr[id] === name) apply() }; im.src = `img/${name}.webp` }
+    el.src = `img/${name}.webp`; apply(); el.classList.remove('pop'); void el.offsetWidth; el.classList.add('pop')
   }
   // ？の輪と吹き出しを、隣の人と自分の頭の上に置く
   function placeLabels() {
@@ -411,7 +411,7 @@
 
   drawMute(); applyLang(); show('vTitle'); requestAnimationFrame(frame)
   ;(async () => {
-    const imgs = ['bg', 'me-normal', 'me-bite', 'me-chew', 'me-panic', 'me-caught', 'me-safe', 'nb-phone', 'nb-tell', 'nb-look', 'nb-sleep', 'nb-sniff', 'nb-angry', 'oj', 'oj-shumai', 'oj-sleep', 'cond', 'cond-look', 'kid'].map(n => `art/${n}.webp`)
+    const imgs = ['bg', 'me-normal', 'me-bite', 'me-chew', 'me-panic', 'me-caught', 'me-safe', 'nb-phone', 'nb-tell', 'nb-look', 'nb-sleep', 'nb-sniff', 'nb-angry', 'oj', 'oj-shumai', 'oj-sleep', 'cond', 'cond-look', 'kid'].map(n => `img/${n}.webp`)
     const files = [...new Set(Object.values(Snd.files).flat().concat(['snd/rumble.mp3', 'snd/bgm.mp3', 'snd/heart.mp3']))]
     const all = files.length + imgs.length
     let done = 0; const bar = document.querySelector('#loadBar i'); const tickBar = () => { done++; bar.style.width = (done / all * 100) + '%' }

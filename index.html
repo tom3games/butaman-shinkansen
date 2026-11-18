@@ -47,8 +47,8 @@ button{font-family:inherit;color:inherit;border:0;background:none;cursor:pointer
 #tH .b{display:block;font-size:min(10.6vw,50px,6.6svh);letter-spacing:-.03em;white-space:nowrap}
 #tSub{margin-top:8px;font-size:15px;font-weight:700;color:#5c544b}
 #tPic{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
-#tPic .tSeat{position:relative;height:100%;max-height:300px;aspect-ratio:1.25;max-width:96%;border-radius:18px;background:url(art/bg.webp) 50% 70%/120% auto;box-shadow:inset 0 0 0 4px #d8d1c3;overflow:hidden}
-#tPic .tSeat::after{content:"";position:absolute;left:0;right:0;bottom:0;height:16%;background:url(art/fg.webp) 50% 0/120% auto;z-index:3}
+#tPic .tSeat{position:relative;height:100%;max-height:300px;aspect-ratio:1.25;max-width:96%;border-radius:18px;background:url(img/bg.webp) 50% 70%/120% auto;box-shadow:inset 0 0 0 4px #d8d1c3;overflow:hidden}
+#tPic .tSeat::after{content:"";position:absolute;left:0;right:0;bottom:0;height:16%;background:url(img/fg.webp) 50% 0/120% auto;z-index:3}
 #tPic img{position:absolute;bottom:0;height:86%}
 #tPic .tA{left:2%;height:72%;z-index:2}#tPic .tB{right:2%}
 #tPic .tQ{position:absolute;right:4%;top:6%;z-index:4;width:52px;height:52px;border-radius:50%;background:#fff;border:3px solid var(--ink);font-weight:900;font-size:30px;display:flex;align-items:center;justify-content:center;animation:tq 1.6s ease-in-out infinite}
@@ -162,7 +162,7 @@ button{font-family:inherit;color:inherit;border:0;background:none;cursor:pointer
     <div class="board"><div id="tLed" class="led"><span>この電車は のぞみ号 東京行きです　車内では 匂いの強い食べ物に ご注意ください</span></div></div>
     <h1 id="tH"><span class="a" id="tT1">新幹線で</span><span class="b" id="tT2">豚まんを食べたい</span></h1>
     <p id="tSub"></p>
-    <div id="tPic"><div class="tSeat"><img src="art/me-bite.webp" alt="" class="tA"><img src="art/nb-tell.webp" alt="" class="tB"><div class="tQ">？</div></div></div>
+    <div id="tPic"><div class="tSeat"><img src="img/me-bite.webp" alt="" class="tA"><img src="img/nb-tell.webp" alt="" class="tB"><div class="tQ">？</div></div></div>
     <p id="tBest"></p>
     <button id="bStart"><small id="tTk">乗車券<br>新大阪→東京</small><span id="tStart">乗車する</span></button>
     <div class="tLinks"><button id="bHow">遊び方</button><button id="bLang">English</button><button id="bMute" aria-label="sound"></button></div>
@@ -180,13 +180,13 @@ button{font-family:inherit;color:inherit;border:0;background:none;cursor:pointer
         <div id="win"><div id="sky"></div><div id="hills"></div>
           <svg id="fuji" viewBox="0 0 200 100" preserveAspectRatio="none"><path d="M0 100 L80 14 Q100 2 120 14 L200 100Z" fill="#6e88b8"/><path d="M62 34 L80 14 Q100 2 120 14 L138 34 Q120 30 110 38 Q100 28 90 38 Q80 30 62 34Z" fill="#fff"/></svg>
           <div id="fields"></div><div id="poles"></div></div>
-        <img id="bg" src="art/bg.webp" alt="">
-        <img id="oj" class="spr" src="art/oj.webp" alt="" style="--x:81%;--ax:50%">
-        <img id="nb" class="spr" src="art/nb-phone.webp" alt="" style="--x:50.5%;--ax:50%">
-        <img id="me" class="spr" src="art/me-normal.webp" alt="" style="--x:19%;--ax:50%">
-        <img id="cond" class="spr" src="art/cond.webp" alt="" style="--x:110%;--ax:50%;display:none">
-        <img id="fg" src="art/fg.webp" alt="">
-        <img id="kid" src="art/kid.webp" alt="">
+        <img id="bg" src="img/bg.webp" alt="">
+        <img id="oj" class="spr" src="img/oj.webp" alt="" style="--x:81%;--ax:50%">
+        <img id="nb" class="spr" src="img/nb-phone.webp" alt="" style="--x:50.5%;--ax:50%">
+        <img id="me" class="spr" src="img/me-normal.webp" alt="" style="--x:19%;--ax:50%">
+        <img id="cond" class="spr" src="img/cond.webp" alt="" style="--x:110%;--ax:50%;display:none">
+        <img id="fg" src="img/fg.webp" alt="">
+        <img id="kid" src="img/kid.webp" alt="">
         <canvas id="smell"></canvas>
         <div id="sus"><svg viewBox="0 0 66 66"><circle cx="33" cy="33" r="28" fill="#fff" stroke="#2b2622" stroke-width="3"/><circle id="susArc" cx="33" cy="33" r="22" fill="none" stroke="#c8402e" stroke-width="8" stroke-dasharray="0 200" transform="rotate(-90 33 33)"/><text x="33" y="44" font-size="30" font-weight="900" text-anchor="middle" fill="#2b2622">？</text></svg></div>
         <svg id="tellMark" viewBox="0 0 40 40"><g stroke="#2b2622" stroke-width="4" stroke-linecap="round"><path d="M8 26 2 30"/><path d="M10 16 2 13"/><path d="M18 9 15 2"/></g></svg>
@@ -214,7 +214,7 @@ button{font-family:inherit;color:inherit;border:0;background:none;cursor:pointer
       <div id="rNum"></div>
       <div id="rRank"></div>
       <div id="rWhere"></div>
-      <img id="rFace" src="art/me-normal.webp" alt="">
+      <img id="rFace" src="img/me-normal.webp" alt="">
       <div id="stamp"></div>
     </div>
     <div id="rBtns"><button id="bAgain">もう一回</button><div id="rSub"><button id="bPost">Xでポスト</button><button id="bSave">画像を保存</button></div></div>
@@ -250,7 +250,7 @@ button{font-family:inherit;color:inherit;border:0;background:none;cursor:pointer
 <script src="tm.js?v=1" data-game="butaman-shinkansen"></script>
 <script src="sfx.js?v=2"></script>
 <script src="data.js?v=2"></script>
-<script src="game.js?v=2"></script>
+<script src="game.js?v=3"></script>
 <script src="support.js?v=2" data-ja="豚まん" data-en="a pork bun"></script>
 </body>
 </html>

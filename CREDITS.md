@@ -16,4 +16,4 @@
 - snd/heart.mp3: File:Heartbeat mitral valve 150 bpm.ogg / ezwa / Public domain（Wikimedia Commons）
 - snd/cloth1.mp3, snd/cloth2.mp3: 50 RPG sound effects / Kenney / CC0
 - snd/step4.mp3, snd/step5.mp3, snd/step7.mp3: 50 RPG sound effects / Kenney / CC0
-- art/*.webp: 本作のために画像生成で作ったオリジナルのイラスト
+- img/*.webp: 本作のために画像生成で作ったオリジナルのイラスト
