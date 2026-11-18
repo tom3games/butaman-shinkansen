@@ -80,6 +80,8 @@ const Snd = {
     }
     if (!this.bufs[url]) this.load(); start()
   },
+  // ループの音量だけ変える（心臓の音など、危なさに合わせて上げ下げする）
+  setLoopVol(slot, v, sec = 0.12) { const l = this.loops[slot]; if (!l) return; l.vol = v; if (!l.g || !this.ctx) return; const t = this.ctx.currentTime, g = l.g.gain; g.cancelScheduledValues(t); g.setValueAtTime(g.value, t); g.linearRampToValueAtTime(Math.max(0.0001, v), t + sec) },
   duck(to = 0.4, sec = 1) { if (!this.ctx) return; const g = this.bed.gain, t = this.ctx.currentTime; g.cancelScheduledValues(t); g.setValueAtTime(g.value, t); g.linearRampToValueAtTime(to, t + 0.08); g.linearRampToValueAtTime(1, t + sec) },
   level() { if (!this.an) return 0; const d = new Float32Array(this.an.fftSize); this.an.getFloatTimeDomainData(d); let m = 0; for (const v of d) m = Math.max(m, Math.abs(v)); return m },
 }

@@ -13,3 +13,7 @@
 - snd/win.mp3: 85 Short music jingles / Kenney / CC0
 - snd/squeak.mp3: Squeak toy sounds / bart / CC0
 - snd/bgm.mp3: Comedy Funny Background Song / Almitory / CC-BY 3.0,CC-BY 4.0,CC-BY-SA 3.0,CC-BY-SA 4.0,CC0,GPL 2.0,GPL 3.0,OGA-BY 3.0
+- snd/heart.mp3: File:Heartbeat mitral valve 150 bpm.ogg / ezwa / Public domain（Wikimedia Commons）
+- snd/cloth1.mp3, snd/cloth2.mp3: 50 RPG sound effects / Kenney / CC0
+- snd/step4.mp3, snd/step5.mp3, snd/step7.mp3: 50 RPG sound effects / Kenney / CC0
+- art/*.webp: 本作のために画像生成で作ったオリジナルのイラスト

@@ -2,7 +2,7 @@ node_modules
 .DS_Store
 shots/
 art/prompts/
-shots/
-node_modules
-shots/
-art/prompts/
+art/raw/
+art/logs/
+art/.codex_imagegen/
+art/cuts*/
