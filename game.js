@@ -350,7 +350,7 @@
     let me = 'me-normal'
     if (S.mode === 'caught') me = 'me-caught'
     else if (S.safeT > 0) me = 'me-safe'
-    else if (S.raise > 0.45) me = 'me-bite'
+    else if (S.raise > 0.45) me = S.hold && Math.floor(S.t * 6) % 2 ? 'me-munch' : 'me-bite' // 長押しの間は口を開け閉めして、食べているのが分かるように
     else if ((n === 'tell' || S.kid.st === 'peek') && S.chew > 0) me = 'me-panic'
     else if (S.chew > 0) me = 'me-chew'
     spr('me', me)
@@ -411,7 +411,7 @@
 
   drawMute(); applyLang(); show('vTitle'); requestAnimationFrame(frame)
   ;(async () => {
-    const imgs = ['bg', 'me-normal', 'me-bite', 'me-chew', 'me-panic', 'me-caught', 'me-safe', 'nb-phone', 'nb-tell', 'nb-look', 'nb-sleep', 'nb-sniff', 'nb-angry', 'oj', 'oj-shumai', 'oj-sleep', 'cond', 'cond-look', 'kid'].map(n => `img/${n}.webp`)
+    const imgs = ['bg', 'me-normal', 'me-bite', 'me-munch', 'me-chew', 'me-panic', 'me-caught', 'me-safe', 'nb-phone', 'nb-tell', 'nb-look', 'nb-sleep', 'nb-sniff', 'nb-angry', 'oj', 'oj-shumai', 'oj-sleep', 'cond', 'cond-look', 'kid'].map(n => `img/${n}.webp`)
     const files = [...new Set(Object.values(Snd.files).flat().concat(['snd/rumble.mp3', 'snd/bgm.mp3', 'snd/heart.mp3']))]
     const all = files.length + imgs.length
     let done = 0; const bar = document.querySelector('#loadBar i'); const tickBar = () => { done++; bar.style.width = (done / all * 100) + '%' }
